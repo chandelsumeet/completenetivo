@@ -1,0 +1,134 @@
+
+
+/*slider start*/
+.slider-tab1-content ,.slider-tab2-content
+{
+    display: none;
+
+}
+
+#slider-r1:checked ~.slider-tab1-content
+{
+    display: grid;
+}
+#slider-r2:checked~.slider-tab2-content
+{
+    display: grid;
+}
+#slider-r1,#slider-r2
+{
+    display: none;
+}
+
+.slider-grid-m
+{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:  auto;
+    column-gap: 0.5rem;
+
+}
+.slider
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns:1fr;
+}
+
+
+ .slider-tab1 >img
+{
+width:100%;
+height:auto;
+}
+.slider-tab2 >img
+{
+width:100%;
+height:auto;
+}
+.slider-navigation
+{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.slider-text{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 2rem;
+
+}
+.slider-con1
+{
+    grid-column: 2;
+    padding-bottom: 1rem;
+}
+.slider-con2
+{
+    grid-column: 2;
+}
+
+.slider-f1{
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #69696E;
+}
+.slider-f2
+{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #69696E;
+}
+
+
+/*slider end*/
+
+
+
+/*media query for sider*/
+@media only screen and (max-width:500px)
+{
+    .slider-grid-m
+    {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5rem;
+    }
+
+    .slider-f1
+    {
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: 900;
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #69696E;
+    }
+
+    .slider-f2
+    {
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #69696E;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .slider-text
+    {
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 0.5rem;
+    }
+
+    .slider-container
+    {
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap:2rem;
+        
+    }
+
+}
